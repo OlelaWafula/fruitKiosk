@@ -1,11 +1,11 @@
 # ChepsOlela
-=========================================================================================================================
-			Fruit Service Engine Log 
-	Students: CHEPSOL SAMMY KIPLAGAT - 224161 & OLELA WAFULA JAMES - 112757
-	Assignment: Distributed Mobile Application – Fruit Service Engine
-	Platform: Java Servlets + RMI + MySQL + HTML (NetBeans IDE)
-	Duration: June 24 – July 7, 2025
-=========================================================================================================================
+#=========================================================================================================================
+#			Fruit Service Engine Log 
+#	Students: CHEPSOL SAMMY KIPLAGAT - 224161 & OLELA WAFULA JAMES - 112757
+#	Assignment: Distributed Mobile Application – Fruit Service Engine
+#	Platform: Java Servlets + RMI + MySQL + HTML (NetBeans IDE)
+#	Duration: June 24 – July 7, 2025
+#=========================================================================================================================
  
 1. Project Initialization - 2025-06-24
 ==========================================================================================================================
