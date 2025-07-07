@@ -8,83 +8,83 @@
 #==================================================================================
  
 1. Project Initialization - 2025-06-24
-==========================================================================================================================
-Set up a new Java Web application in NetBeans, establishing a clean folder structure (web pages, interfaces, server logic, and servlets).
-Integrated com.mysql.cj.jdbc.Driver and configured GlassFish Server 4.1.1.
-Created the fruitdb MySQL database and designed the fruit_price table with fields for name and price.
+#=====================================================================================
+#Set up a new Java Web application in NetBeans, establishing a clean folder structure (web pages, interfaces, server logic, and servlets).
+#Integrated com.mysql.cj.jdbc.Driver and configured GlassFish Server 4.1.1.
+#Created the fruitdb MySQL database and designed the fruit_price table with fields for name and price.
 
 
 2. Initial RMI Server and Utility Setup - 2025-06-25
-==========================================================================================================================
-Implemented key server-side RMI components: Compute, Task, and DatabaseUtility.
-Developed server task classes: AddFruitPrice, UpdateFruitPrice, DeleteFruitPrice, CalFruitCost, and CalculateCost.
-Deployed and tested FruitComputeEngine to confirm RMI registry startup on port 1099.
+#==========================================================================================
+#Implemented key server-side RMI components: Compute, Task, and DatabaseUtility.
+#Developed server task classes: AddFruitPrice, UpdateFruitPrice, DeleteFruitPrice, CalFruitCost, and CalculateCost.
+#Deployed and tested FruitComputeEngine to confirm RMI registry startup on port 1099.
 
 
 3. Development of Client Servlets - 2025-06-26
-==========================================================================================================================
-Created servlets for handling client-side HTTP requests and forwarding them to RMI services:
-AddFruitServlet, CalFruitCostServlet, CalculateCostServlet, DeleteFruitPriceServlet, and UpdateFruitPriceServlet.
-Connected servlet actions to RMI task handlers.
+#=============================================================================================
+#Created servlets for handling client-side HTTP requests and forwarding them to RMI services:
+#AddFruitServlet, CalFruitCostServlet, CalculateCostServlet, DeleteFruitPriceServlet, and UpdateFruitPriceServlet.
+#Connected servlet actions to RMI task handlers.
 
 
 4. User Interface and Form Design - 2025-06-27
-===========================================================================================================================
-Developed HTML forms for the following functions:
--Add Fruit
--Update Fruit Price
--Delete Fruit
--Calculate Fruit Cost
--Generate Receipt
--Conducted display testing and verified UI renders across different browsers.
+#===============================================================================================
+#Developed HTML forms for the following functions:
+#-Add Fruit
+#-Update Fruit Price
+#-Delete Fruit
+#-Calculate Fruit Cost
+#-Generate Receipt
+#-Conducted display testing and verified UI renders across different browsers.
 
 
 5. Servlet Logic: Add & Update - 2025-06-28
-============================================================================================================================
-AddFruitServlet
-Connected HTML form to AddFruitPrice RMI task.
-Inserted data into the database and validated with success response.
-UpdateFruitPriceServlet
-Connected update form to UpdateFruitPrice RMI task.
-Fixed initial 404 error due to servlet misconfiguration in web.xml.
-Validated that fruit price updates reflected in database.
+#=============================================================================================
+#AddFruitServlet
+#Connected HTML form to AddFruitPrice RMI task.
+#Inserted data into the database and validated with success response.
+#UpdateFruitPriceServlet
+#Connected update form to UpdateFruitPrice RMI task.
+#Fixed initial 404 error due to servlet misconfiguration in web.xml.
+#Validated that fruit price updates reflected in database.
 
 
 6. Servlet Logic: Delete, Cost Calculations - 2025-06-30
-===========================================================================================================================
-DeleteFruitPriceServlet
-Connected delete form input to DeleteFruitPrice RMI task.
-Resolved SQL error by correcting table column reference (fruit_name).
-Successfully removed entries and confirmed deletion.
-CalFruitCostServlet
-Processed fruit cost computation by retrieving form input and invoking CalFruitCost task.
-Output calculation returned accurate results during test runs.
-CalculateCostServlet
-Enabled receipt generation using cashier name, total cost, and payment.
-Performed end-to-end transaction simulation with correct change computation.
+#=================================================================================================
+#DeleteFruitPriceServlet
+#Connected delete form input to DeleteFruitPrice RMI task.
+#Resolved SQL error by correcting table column reference (fruit_name).
+#Successfully removed entries and confirmed deletion.
+#CalFruitCostServlet
+#Processed fruit cost computation by retrieving form input and invoking CalFruitCost task.
+#Output calculation returned accurate results during test runs.
+#CalculateCostServlet
+#Enabled receipt generation using cashier name, total cost, and payment.
+#Performed end-to-end transaction simulation with correct change computation.
 
 
 7. System Integration and Testing - 2025-07-02
-=============================================================================================================================
-Performed integration testing for all servlets and RMI back-end tasks.
-Verified CRUD operations and cost calculations with various input values.
-Confirmed MySQL database responses under edge cases.
+#====================================================================================================
+#Performed integration testing for all servlets and RMI back-end tasks.
+#Verified CRUD operations and cost calculations with various input values.
+#Confirmed MySQL database responses under edge cases.
 
 
 8. Project Report Writing - 2025-07-04
-==============================================================================================================================
-Documented key features, design approach, and technical choices.
-Included implementation steps, test cases, and screen captures.
-Finalized the project submission report document.
+#=======================================================================================================
+#Documented key features, design approach, and technical choices.
+#Included implementation steps, test cases, and screen captures.
+#Finalized the project submission report document.
 
 
 9. Log Diary Compilation - 2025-07-05
-==============================================================================================================================
-Reviewed and compiled daily development logs into this complete development diary.
-Ensured accurate date tagging and detailed task breakdown for submission.
+#============================================================================================================
+#Reviewed and compiled daily development logs into this complete development diary.
+#Ensured accurate date tagging and detailed task breakdown for submission.
 
 
 10. Final Deployment & GitHub Submission - 2025-07-07
-==============================================================================================================================
-Uploaded final project version to GitHub.
-Validated remote deployment and shared access credentials for project review.
+#=============================================================================================================
+#Uploaded final project version to GitHub.
+#Validated remote deployment and shared access credentials for project review.
