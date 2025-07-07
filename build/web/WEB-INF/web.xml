@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <!-- Add Fruit -->
+    <servlet>
+        <servlet-name>AddFruitServlet</servlet-name>
+        <servlet-class>servlet.AddFruitServlet</servlet-class>
+    </servlet>
+    <!-- servlet maapings-->
+    <servlet>
+        <servlet-name>CalFruitCostServlet</servlet-name>
+        <servlet-class>servlet.CalFruitCostServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CalculateCostServlet</servlet-name>
+        <servlet-class>servlet.CalculateCostServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateFruitServlet</servlet-name>
+        <servlet-class>servlet.UpdateFruitServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteFruitServlet</servlet-name>
+        <servlet-class>servlet.DeleteFruitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddFruitServlet</servlet-name>
+        <url-pattern>/AddFruitServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CalFruitCostServlet</servlet-name>
+        <url-pattern>/CalFruitCostServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CalculateCostServlet</servlet-name>
+        <url-pattern>/CalculateCostServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateFruitServlet</servlet-name>
+        <url-pattern>/UpdateFruitServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteFruitServlet</servlet-name>
+        <url-pattern>/DeleteFruitServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
